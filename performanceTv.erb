@@ -1,0 +1,42 @@
+script type='text/javascript'>
+ $(function() {
+   //Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col"$
+   Dashing.numColumns = 6
+ });
+ </script>
+
+<% content_for :title do %>1080p dashboard<% end %>
+
+<div class="gridster">
+  <ul>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="cpu" data-view="Number" data-suffix="%" data-title="CPU Usage" style="background-color: #ffa500;"></div>
+    </li>
+
+    <li data-row="1" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="ram" data-view="Meter" data-min="0" data-max="32" data-title="Free RAM (in GB)" style="background-color: #cd5c5c;"></div>
+    </li>
+
+    <li data-row="2" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="load" data-view="Graph" data-title="Load Average" style="background-color: #32cd32;"></div>
+    </li>
+
+    <li data-row="3" data-col="1" data-sizex="2" data-sizey="1">
+      <div data-id="network" data-view="Number" data-title="Network" style="background-color: #800080;"></div>
+    </li>
+
+    <li data-row="2" data-col="2" data-sizex="1" data-sizey="1">
+      <div data-id="disk" data-view="Number" data-suffix="%" data-title="Disk Usage" style="background-color: #1e90ff"></div>
+    </li>
+
+    <li data-row="1" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="updates-available" data-view="Number" data-title="Updates Available" style="background-color: #000099"></div>
+    </li>
+
+    <li data-row="2" data-col="3" data-sizex="1" data-sizey="1">
+      <div data-id="uptime" data-view="Number" data-title="Uptime (in days)" style="background-color: #cc9900"></div>
+    </li>
+
+  </ul>
