@@ -1,7 +1,7 @@
 # dashing-performance-monitor
 widget for dashing that let you check some stats of your linux server
 
-
+![Example how it looks like](http://i.imgur.com/A2YrWWp.png "Look cool, isn't it?")
 
 Just clone this into your dashing folder:
 - `dashing new performance_monitor`
